@@ -1,0 +1,404 @@
+:root {
+
+    --roxo: #4f51be;
+    --preto: #000;
+    --branco: #fff;
+}
+
+body,
+html {
+    overflow-x: hidden !important;
+}
+
+.telaDisp {
+    height: 80vh;
+}
+
+.bannerInicio {
+    padding-top: 3rem;
+    background: url('../img/bgGradient.png') no-repeat;
+    height: 80vh;
+}
+
+.tituloPag {
+    font-size: 4rem;
+
+}
+
+.grafico1 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 10rem;
+}
+
+.grafico2 {
+    position: absolute;
+    bottom: 10%;
+    right: 0px;
+    width: 6rem;
+}
+
+.btnLigarHeader {
+
+    width: 120px;
+
+}
+
+.btnMenu {
+
+    font-size: 30px;
+    border: 1px solid var(--preto);
+    color: var(--preto);
+
+}
+
+.btnOutlinePreto {
+    background-color: transparent;
+    border: 1px solid var(--preto);
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.btnOutlinePreto:hover {
+
+    background-color: var(--preto);
+    color: var(--branco);
+
+}
+
+.bgPreto {
+    background-color: var(--preto);
+}
+
+.btnPreto {
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.btnPreto:hover {
+    background-color: transparent;
+    border: 1px solid var(--preto);
+    color: var(--preto);
+}
+
+.barraNav {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(8px);
+}
+
+.containerCard img {
+    border-radius: 30px 30px 0px 0px;
+}
+
+.containerCard h6 {
+
+    font-size: 150%;
+    margin-bottom: 1.5rem;
+
+}
+
+.containerCard {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+    border-radius: 30px;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.btnCard {
+    background-color: var(--preto);
+    color: var(--branco);
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+    padding: 1rem 0;
+    transition: .5s;
+}
+
+.btnCard:hover {
+    background-color: #181818;
+    color: var(--branco);
+}
+
+.imagemBanner {
+    width: 200px;
+}
+
+.bgCard1 {
+    background: url('../img/Group\ 82.png') no-repeat;
+    background-position: center;
+    background-size: 120%;
+}
+
+.containerDocumentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    height: 200px;
+}
+
+.containerDocumentacao span {
+    font-size: 25px;
+    color: var(--roxo);
+}
+
+.containerDocumentacao h6 {
+    font-size: 18px;
+}
+
+.slick-track {
+    padding: 2rem 0;
+}
+
+.slick-dots {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offcanvas {
+    bottom: unset;
+}
+
+.inputContato {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--preto);
+    border-radius: 0px;
+    font-weight: 700;
+}
+
+.inputContato:focus {
+    background-color: transparent;
+    border-bottom: 1px solid var(--preto);
+    box-shadow: none;
+}
+
+/*FOOTER*/
+
+footer {
+    border-top: 1px solid #f0f0f0;
+    padding: 3rem 0 1rem 0;
+}
+
+.logoFooter {
+    width: 6.25rem;
+}
+
+.linkFooter {
+    color: var(--preto);
+    font-size: 17px;
+    text-decoration: none;
+    position: relative;
+}
+
+.linkFooter::before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 0%;
+    background-color: var(--roxo);
+    position: absolute;
+    bottom: 0px;
+    transition: .5s;
+}
+
+.linkFooter:hover::before {
+    width: 100%;
+}
+
+.linkFooter:hover {
+    color: var(--preto);
+}
+
+.copyFooter {
+    font-size: 14px;
+}
+
+/*RESPONSIVIDADE SITE*/
+@media screen and (min-width: 0px) and (max-width: 329px) {
+
+    .tituloPag {
+        font-size: 2rem;
+    }
+
+    .bannerInicio {
+
+        height: auto;
+        margin-bottom: 7rem !important;
+    }
+
+}
+
+@media screen and (min-width: 330px) and (max-width: 767px) {
+
+    .tituloPag {
+        font-size: 2rem;
+    }
+
+    .btnPreto {
+        width: 100%;
+    }
+
+    .btnOutlinePreto {
+
+        width: 100%;
+
+    }
+
+    /* .barraNav {
+        background: rgba(255, 255, 255, 0.178);
+        backdrop-filter: none;
+    } */
+
+    .bannerInicio {
+        padding-top: 7rem;
+        height: auto;
+        margin-bottom: 15rem !important;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .bannerInicio {
+        padding-top: 5rem;
+        height: auto;
+        margin-bottom: 15rem !important;
+    }
+
+}
+
+
+
+
+
+/*RESPONSIVIDADE DAS IMAGENS COM POSICIONAMENTO LIVRE*/
+
+@media screen and (min-width: 0px) and (max-width: 352px) {
+
+    .grafico1 {
+        width: 3.8rem;
+    }
+
+    .grafico2 {
+        width: 3.1rem;
+    }
+
+}
+
+@media screen and (min-width: 353px) and (max-width: 480px) {
+
+    .grafico1 {
+        width: 5rem;
+    }
+
+    .grafico2 {
+        width: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 585px) {
+
+    .grafico1 {
+        width: 7rem;
+    }
+
+    .grafico2 {
+        width: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 586px) and (max-width: 700px) {
+
+    .grafico1 {
+        width: 8.5rem;
+    }
+
+    .grafico2 {
+        width: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 701px) and (max-width: 767px) {
+
+    .grafico1 {
+        width: 9.5rem;
+    }
+
+    .grafico2 {
+        width: 6.5rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .grafico1 {
+        width: 7rem;
+        top: 5%;
+    }
+
+    .grafico2 {
+        width: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+
+    .grafico1 {
+        width: 8rem;
+        top: 15%;
+    }
+
+    .grafico2 {
+        width: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1280px) {
+
+    .grafico1 {
+        width: 8rem;
+        top: 10%;
+    }
+
+    .grafico2 {
+        width: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1400px) {
+
+    .grafico1 {
+        width: 10rem;
+    }
+
+    .grafico2 {
+        width: 7rem;
+    }
+
+}
